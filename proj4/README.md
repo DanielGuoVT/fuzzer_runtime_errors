@@ -34,5 +34,7 @@ input1, input2
 
 ### Error found: 
 input1 ==> PJ_labard.c:115:17, runtime error: division by zero
+
 input2 ==> PJ_somerc.c:83:58: runtime error: division by zero
+
 input2 ==> PJ_somerc.c:49:53: runtime error: division by zero
