@@ -1,6 +1,6 @@
 # Runtime errors in proj.4 
 
-Proj4 version: 
+proj.4 version: 
 https://github.com/OSGeo/proj.4.git
 
 Test driver: proj.c
