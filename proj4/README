@@ -1,9 +1,0 @@
-Test driver: proj.c
-Proj4 version: https://github.com/OSGeo/proj.4.git
-Compile: $CC ./proj.c -DSTANDALONE -lubsan -lm -I /path/to/src/ /path/to/libproj.a -o proj
-Run: ./proj input_file (E.g., ./proj input1)
-
-Error found: 
-input1 ==> PJ_labard.c:115:17, runtime error: division by zero
-input2 ==> PJ_somerc.c:83:58: runtime error: division by zero
-       ==> PJ_somerc.c:49:53: runtime error: division by zero
