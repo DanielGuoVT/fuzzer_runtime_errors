@@ -12,6 +12,8 @@ rm -fr build
 cp fr src build
 cd build && ./autogen.sh
 make clean
+export CC='wllvm'
+export CXX='wllvm++ -std=c++11'
 ./configure
 make clean
 make -j4
@@ -20,7 +22,7 @@ cd ..
 
 ### Compile test driver: 
 ```bash
-$CC ./proj.c -DSTANDALONE -lubsan -lm -I /path/to/src/ /path/to/libproj.a -o proj
+$CC ./proj.c -DSTANDALONE -lm -I /path/to/src/ /path/to/libproj.a -o proj
 ```
 ### Run: 
 ```bash
